@@ -1,6 +1,7 @@
 import { SiTicktick } from "react-icons/si";
 import HorizontalScroll from "./HorizontalScroll";
 import "../styles/customer.css";
+import Image from "next/image";
 
 export default function Home() {
   const comments = [
@@ -45,7 +46,7 @@ export default function Home() {
             className="flex-shrink-0 w-80 h-60 border m-2 flex flex-col pt-10 pl-10 text-2xl font-bold rounded-lg"
           >
             {/* Render the image */}
-            <img
+            <Image alt="iuy" height={100} width={100}
               src={comment.image}
               className="review-detail"
             />

@@ -5,6 +5,8 @@ import { RxCross2 } from "react-icons/rx";
 import { IoIosArrowDown } from "react-icons/io";
 import { IoSearchSharp } from "react-icons/io5";
 import { PiShoppingCartSimple } from "react-icons/pi";
+import Arrivals from "./components/Arrivals";
+import Image from "next/image";
 
 export default function Home()  {
   return (
@@ -64,7 +66,7 @@ export default function Home()  {
 </div>
 
 {/* Sign-Up Banner */}
-<div className="w-full bg-black h-[38px] flex py-[9px] flex justify-center  px-4 md:px-[100px] items-center">
+<div className="w-full bg-black h-[38px] flex py-[9px]  justify-center  px-4 md:px-[100px] items-center">
   <p className="font-satoshi text-[10px] md:text-[16px] font-normal leading-[16px] md:leading-[18.9px] text-white underline-offset-auto decoration-slice ">
     Sign up and get 20% off your first order.
     <span className="ml-2 font-medium underline decoration-solid ">
@@ -76,57 +78,20 @@ export default function Home()  {
 
 
 <div   className="bg-home">
-<img src="/vector.png" alt="vector" className="vector1"/>
-<img src="/vector.png" alt="vector" className="vector2"/>
+<Image height={100} width={100} src="/vector.png" alt="vector" className="vector1"/>
+<Image height={100} width={100} src="/vector.png" alt="vector" className="vector2"/>
 <p className='index1'>
   FIND CLOTHES THAT MATCHES YOUR STYLE</p>
   <p className='index2'>Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and
      cater to your sense of style.</p>
      <button className="shop-Button">Shop Now</button>
-     <img src="/bg-res.png" alt="picture" className="bg-res"/>
+     <Image height={600} width={600} src="/bg-res.png" alt="picture" className="bg-res"/>
 </div><div className="brand-list">
 <li>VERSACE</li><li>ZARA</li><li>GUCCI</li><li>PRADA</li><li>Calvin Klein</li></div>
-<Arrivals/>
+<Arrivals />
 <Customer/>
 <Footer/>
 </div>
   );
 };
 
-export function Arrivals(){
-  return(
-    <div>
-      <h1 className="new-arrivals">NEW ARRIVALS</h1>
-      <div >
-        <img src="/frame1.png" alt="product"className="product1"/><p className="product-1-price">$120</p>
-        <img src="/frame1Detail.png" alt="Details"className="product1Detail"/>
-        <img src="/frame2.png" alt="product"className="product2"/>
-        <img src="/frame2Detail.png" alt="Details"className="product2Detail"/><p className="product-2-price">$240 <s>$260</s><b className="off">-20%</b></p>
-        <img src="/frame3.png" alt="product"className="product3"/>
-        <img src="/frame1Detail.png" alt="Details"className="product3Detail"/><p className="product-3-price">$180</p>
-        <img src="/frame4.png" alt="product"className="product4"/>
-        <img src="/frame1Detail.png" alt="Details"className="product4Detail"/><p className="product-4-price">$130<s>$160</s><b className="off">-30%</b></p>
-      </div><button className="view-button">View All</button><hr className="horizontal"/>
-      <h1 className="top-selling">Top Selling</h1>
-      <img src="/frame5.png" alt="product"className="product5"/><p className="product-5-price">$212 <s> $232</s> <b className="off">-20%</b
-      ></p>
-      <img src="/frame5Detail.png" alt="Details"className="product5Detail"/>
-      <img src="/frame6.png" alt="product"className="product6"/>
-      <img src="/frame6Detail.png" alt="Details"className="product6Detail"/><p className="product-6-price">$145</p>
-      <img src="/frame7.png" alt="product"className="product7"/>
-      <img src="/frame7Detail.png" alt="Details"className="product7Detail"/><p className="product-7-price">$80</p>
-      <img src="/frame8.png" alt="product"className="product8"/>
-       <img src="/frame2Detail.png" alt="Details"className="product8Detail"/><p className="product-8-price">$120</p>
-       <button className="view-2">View All</button>
-      <div className="browse">
-        <h1 className="brawse-heading">BROWSE BY DRESS STYLE</h1>
-      <img src="/browse1.png" alt="product"className="browse1"/>
-      <img src="/browse2.png" alt="product"className="browse2"/>
-      <img src="/browse3.png" alt="product"className="browse3"/>
-      <img src="/browse4.png" alt="product"className="browse4"/>
-      </div>
-        
-  </div>
-    
-  )
-}

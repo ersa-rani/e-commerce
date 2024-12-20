@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 
-import { GrUserManager } from "react-icons/gr";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",

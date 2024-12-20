@@ -3,6 +3,7 @@ import { FaFacebook } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import "../styles/footer.css"
+import Image from "next/image";
 
 export default function Footer(){
   return (
@@ -61,11 +62,11 @@ export default function Footer(){
     <hr className="mt-10 "/>
     <p className="info">Shop.co © 2000-2021, All rights reserved
   
-    <img src="/visa.png" alt="card" className="payment" style={{marginLeft:955, marginTop:-25}}/>
-    <img src="/master.png" alt="card" className="payment" style={{marginLeft:1035, marginTop:-30}}/>
-    <img src="/paypal.png" alt="card" className="payment" style={{marginLeft:1110, marginTop:-30}}/>
-    <img src="/pay.png" alt="card" className="payment" style={{marginLeft:1180, marginTop:-30}}/>
-    <img src="/G pal.png" alt="card" className="payment" style={{marginLeft:880, marginTop:-30}}/>
+    <Image height={100} width={100} src="/visa.png" alt="card" className="payment" style={{marginLeft:955, marginTop:-25}}/>
+    <Image height={100} width={100} src="/master.png" alt="card" className="payment" style={{marginLeft:1035, marginTop:-30}}/>
+    <Image height={100} width={100} src="/paypal.png" alt="card" className="payment" style={{marginLeft:1110, marginTop:-30}}/>
+    <Image height={100} width={100} src="/pay.png" alt="card" className="payment" style={{marginLeft:1180, marginTop:-30}}/>
+    <Image height={100} width={100} src="/G pal.png" alt="card" className="payment" style={{marginLeft:880, marginTop:-30}}/>
     </p>
    </div>
 
